@@ -1,0 +1,359 @@
+/*Баннер*/
+.banner {
+    background-image: url('../img/banners.png');
+    background-size: cover;
+    padding: 260px 41%; 
+    color: #fff;
+    /* filter: brightness(80%);  */
+    
+  }
+  
+  
+
+  /* Обратная свзяь ЛК*/
+
+  #login {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+#login .loginBlock {
+    padding: 3%;
+    border-radius: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login .loginBlock input {
+    text-align: center;
+    margin: 2%;
+    width: 35%;
+    padding: 1.5%;
+    border: 0.05vw solid rgba(255, 255, 255, 0);
+    color: rgba(182, 182, 182, 1);
+    border-radius: 10px;
+    width: 70%;
+}
+
+#login .loginBlock a {
+    padding: 3% 5%;
+    color: white;
+    text-align: center;
+    background-color: #7B1FA2;
+    border-radius: 10px;
+    width: 35%;
+    margin: 2%;
+}
+
+#login .loginBlock a:last-child{
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background: none;
+    width: 100%;
+    font-size: clamp(14px, 2vw,24px);
+}
+
+@media (max-width:1000px) {
+    #login .loginBlock {
+        width: 60%;
+    }
+}
+
+@media (max-width:600px) {
+    #login .loginBlock {
+        width: 80%;
+    }
+}
+
+
+
+/* Настройка страницы */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Inter-Regular';
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url(/assets/font/Inter-Regular.otf);
+}
+
+button {
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background: url(/assets/img/banners.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Хэдр */
+header {
+  padding:20px 0;
+  background: #F5F5DC;
+}
+
+header .headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+header .logo {
+  width: 30%;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  object-fit: cover;
+  object-position: center;
+  width: 80%;
+}
+
+header nav {
+  width: 60%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #212121;
+  text-decoration: none;
+}
+
+
+    
+
+  /*До футера*/
+.footer1 {
+  background-color: #2EC4B6;
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer1 h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 121%;
+  color: #fff;
+}
+
+.footer1 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(255, 255, 255, 0.7);
+}
+  
+  /* Footer */
+footer {
+  padding: 50px;
+}
+
+.footer-nav nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding: 0;
+}
+
+.footer-nav nav ul {
+  margin: auto;
+}
+
+.icons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 26px;
+}
+
+
+footer li {
+  display: inline-block;
+  margin: 8px;
+}
+
+footer li a {
+  color: black;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+  text-align: center; /* Центрируем содержимое футера */
+}
+
+.footer-nav nav ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 26px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li {
+  display: inline-block;
+  margin: 8px;
+}
+
+footer li a {
+  color: black;
+  font-size: 18px;
+}
+  
+  @media (max-width:1000px) {
+    .footer-nav nav ul {
+      justify-content: space-between;
+    }
+  
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+    }
+  
+    footer li a {
+      font-size: 18px;
+    }
+  
+    .footer-nav nav {
+      width: 70%;
+    }
+  
+    .footer .logo {
+      width: 200px;
+    }
+  
+    .footer .logo img {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width:650px) {
+    header {
+        padding: 0.5% 0 2%;
+    }
+  
+    header .headerContent {
+        flex-direction: column;
+    }
+  
+    header .logo {
+        width: 200px;
+        height: auto;
+        margin: 1% 0;
+    }
+  
+    header .logo img {
+        object-fit: cover;
+        object-position: center;
+        width: 150px;
+        margin: 20px;
+    }
+  
+    header nav {
+        width: 100%;
+    }
+  
+    header li a{
+      font-size: 16px;
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+  
+    .footer-nav nav {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .footer-nav nav ul {
+      justify-content: space-between;
+    }
+  }
+  
+  
+  
+  @media (max-width: 450px) {
+
+     .footer-nav nav {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .footer-nav nav ul {
+      justify-content: space-between;
+    }
+  
+    footer nav ul li {
+      display: inline;
+    }
+  
+    footer li a {
+      font-size: 16px;
+    }
+  }
+  
